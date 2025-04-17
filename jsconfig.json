@@ -1,7 +1,16 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // Asegúrate de que el valor esté apuntando a la raíz de tu proyecto
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"] // Esto asignará el alias "@" a la carpeta "src"
     }
-  }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.js",
+    "**/*.jsx",
+    ".next/types/**/*.js",
+    "next.config.js"
+  ],
+  "exclude": ["node_modules"]
 }
